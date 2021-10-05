@@ -44,4 +44,18 @@ INSERT INTO `przyloty` (`id`, `samoloty_id`, `nr_rejsu`, `kierunek`, `czas`, `dz
 (5, 4, 'LH9829', 'Berlin', '10:16:00', '2019-07-29', ''),
 (6, 4, 'LH9898', 'Hamburg', '10:19:00', '2019-07-29', ''),
 (7, 4, 'LH3331', 'Monachium', '10:22:00', '2019-07-29', ''),
-(8, 2, 'W68546', 'Zurych', '10:33:00', '2019-07-29', ''); 
+(8, 2, 'W68546', 'Zurych', '10:33:00', '2019-07-29', '');
+
+select id, nr_rejsu, czas, kierunek, status_lotu 
+from odloty
+order by czas desc;
+
+select * from odloty where odloty.status_lotu = "boarding";
+
+select min(odloty.czas) from odloty where (odloty.czas > '10:10:00' and odloty.czas < '10:19:00');
+
+select * from odloty where odloty.status_lotu = "odprawa" and odloty.nr_rejsu like '%x%';
+
+select odloty.nr_rejsu, samoloty.linie from odloty inner join samoloty on samoloty.id = odloty.samoloty_id where odloty.kierunek = 'Malta';
+
+update przyloty set status_lotu = 'planowy' where nr_rejsu = 'LH9829';
