@@ -59,3 +59,9 @@ select * from odloty where odloty.status_lotu = "odprawa" and odloty.nr_rejsu li
 select odloty.nr_rejsu, samoloty.linie from odloty inner join samoloty on samoloty.id = odloty.samoloty_id where odloty.kierunek = 'Malta';
 
 update przyloty set status_lotu = 'planowy' where nr_rejsu = 'LH9829';
+
+select samoloty.typ, samoloty.linie, przyloty.id from samoloty left join przyloty on przyloty.samoloty_id = samoloty.id where przyloty.nr_rejsu is null;
+
+select id, nr_rejsu, czas, kierunek, status_lotu from odloty order by czas asc;
+
+select count(przyloty.id) from przyloty where przyloty.czas between '10:00' and '10:59';
