@@ -3,6 +3,19 @@ create table samoloty (
     typ varchar(20),
     linie varchar(10)
 );
+create table zamowienia (
+    id int primary key auto_increment,
+    produkt varchar(50),
+    status_zamowienia text
+);
+create table klienci(
+    id int primary key auto_increment,
+    zamowienia_id int
+    imie varchar(20),
+    nazwisko varchar(20),
+    data_urodzenia date,
+    foreign key (zamowienia_id) references zamowienia(id)
+);
 create table przyloty (
     id int auto_increment primary key,
     samoloty_id int,
