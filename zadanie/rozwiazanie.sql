@@ -53,3 +53,9 @@ inner join zamowienia on zamowienia.idklienta = klienci.idklienta
 inner join ksiazki on ksiazki.idksiazki = zamowienia.idksiazki
 where klienci.nazwisko = "Rutkowski"
 order by zamowienia.data asc;
+
+
+
+select klienci.imie, zamowienia.idzamowienia 
+from zamowienia
+left join klienci on zamowienia.idklienta = klienci.idklienta;
