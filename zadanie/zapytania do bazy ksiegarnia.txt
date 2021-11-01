@@ -1,10 +1,11 @@
-1. Wyœwietl wszystkie informacje o ksi¹¿kach, u³o¿one alfabetycznie wg nazwiska autora
-2. Wyœwietl wszystkie informacje o wys³anych zamówieniach
-3. Wyœwietl wszystkie informacje o klientach klientach z nazwiskiem Skorupa
-4. Wyœwietl wszystkie informacje o ksi¹¿kach, zawieraj¹cych wyra¿enie "PHP" w tytule
-5. Wyœwietl wszystkie informacje o zamówieniach u³o¿one od ostatnio dokonanego
-6. Wyœwietl informacje o zamówieniach: imiê i nazwisko klienta zamawiaj¹cego, id zamówienia, datê zamówienia
-7. Jak w punkcie 6, w nazwach tabel zastosuje aliase (dowolne)
-8. Wyœwietl imiona, nazwiska i miasta osób, które zamówi³y kiedykolwiek ksi¹¿kê nr 5
-9. Wyœwietl jakie ksi¹¿ki zamówi³a osoba o nazwisku Karenina
-10. Wyœwietl informacje o zamówieniach dokonane przez osoby o nazwisku Rutkowski u³o¿one wg daty od najpóŸniej dokonanych (imiê i nazwisko osoby zamawiaj¹cej, id, datê i status zamówienia, tytu³ zamówionej ksi¹¿ki)
+1. WyÅ›wietl wszystkie informacje o ksiÄ…Å¼kach, uÅ‚oÅ¼one alfabetycznie wg nazwiska autora
+2. WyÅ›wietl wszystkie informacje o wysÅ‚anych zamÃ³wieniach
+3. WyÅ›wietl wszystkie informacje o klientach klientach z nazwiskiem Skorupa
+4. WyÅ›wietl wszystkie informacje o ksiÄ…Å¼kach, zawierajÄ…cych wyraÅ¼enie "PHP" w tytule
+5. WyÅ›wietl wszystkie informacje o zamÃ³wieniach uÅ‚oÅ¼one od ostatnio dokonanego
+6. WyÅ›wietl informacje o zamÃ³wieniach: imiÄ™ i nazwisko klienta zamawiajÄ…cego, id zamÃ³wienia, datÄ™ zamÃ³wienia
+7. Jak w punkcie 7, w nazwach tabel zastosuje aliase (dowolne)
+8. WyÅ›wietl imiona, nazwiska i miasta osÃ³b, ktÃ³re zamÃ³wiÅ‚y kiedykolwiek ksiÄ…Å¼kÄ™ nr 5
+9. WyÅ›wietl jakie ksiÄ…Å¼ki zamÃ³wiÅ‚a osoba o nazwisku Karenina
+10. WyÅ›wietl informacje o zamÃ³wieniach dokonane przez osoby o nazwisku Rutkowski uÅ‚oÅ¼one wg daty od najpÃ³Åºniej dokonanych (imiÄ™ i nazwisko osoby zamawiajÄ…cej, id, datÄ™ i status zamÃ³wienia, tytuÅ‚ zamÃ³wionej ksiÄ…Å¼ki)
+
