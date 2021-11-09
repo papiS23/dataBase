@@ -42,5 +42,14 @@ from dzial join pracownik on pracownik.dzial = dzial.iddzial
 group by dzial;
 
 ## 3.4
+SELECT imiepracownik, nazwiskopracownik, nazwadzial, wiek 
+FROM pracownik 
+INNER JOIN dzial ON pracownik.dzial = dzial.iddzial 
+WHERE wiek IN (SELECT min(wiek) FROM pracownik INNER JOIN dzial ON pracownik.dzial = dzial.iddzial GROUP BY dzial);
 
+## 3.5
+SELECT imiepracownik, nazwiskopracownik, nazwadzial, wiek 
+FROM pracownik 
+INNER JOIN dzial ON pracownik.dzial = dzial.iddzial 
+WHERE wiek IN (SELECT max(wiek) FROM pracownik INNER JOIN dzial ON pracownik.dzial = dzial.iddzial GROUP BY dzial);
 
